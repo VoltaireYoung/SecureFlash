@@ -19,8 +19,13 @@ After the module being builded, cd into "bin" folder and construct the command b
 ```
 1. Help Menu.
    ./GetKey -h
-2. Get public keys and signatures from capsule header.
-   ./GetKey -gkc 
-./GetKey -gkc <BIOS Image> -save(Option)
-./GetKey -grl <BIOS Image> -save(Option)
+   
+2. Get public keys and signatures in capsule header from the input bios rom image.
+   ./GetKey -gkc  <BIOS Image> -save(option, for saving)
+   
+3. Get public keys stored in keystore from the input bios rom image.
+   ./GetKey -gks  <BIOS Image> -save(option, for saving)
+   
+4. Get rom layout in capsule header from the input bios rom image.
+   ./GetKey -grl  <BIOS Image> -save(option, for saving)
 ```
